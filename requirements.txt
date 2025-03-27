@@ -3,3 +3,4 @@ gunicorn
 firebase-admin
 joblib
 numpy
+scikit-learn
