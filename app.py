@@ -25,7 +25,7 @@ def load_model():
     doc = doc_ref.get()
 
     if doc.exists:
-        encoded_model = doc.to_dict().get("model_base64")
+        encoded_model = doc.to_dict().get("model_data")
         model_bytes = base64.b64decode(encoded_model)
 
         # Save the model bytes to a temporary file
